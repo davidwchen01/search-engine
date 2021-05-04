@@ -10,10 +10,10 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = SECRET_KEY
 
 num_docs = 33876
-mi = open("mergedindex.txt","r")
-pos = open("tokenpos.txt","r")
-tfidf = open("tfdf.txt","r")
-urls = open("urls4.txt","r")
+mi = open("indexfiles/mergedindex.txt","r")
+pos = open("indexfiles/tokenpos.txt","r")
+tfidf = open("indexfiles/tfdf.txt","r")
+urls = open("indexfiles/urls.txt","r")
 pos_dict = eval(pos.read())
 tfidf_dict = eval(tfidf.read())
 urls_dict = eval(urls.read())
